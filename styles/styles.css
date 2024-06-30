@@ -5,4 +5,125 @@
     margin: 0;
     padding: 0;
 }
+body{
+    box-sizing: border-box;
+    background-color: #E8E8E8;
+}
+.main{
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text--input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.container--text--input{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contenedor{
+    height: auto;
+    width: 25%;
+}
+.logo{
+
+    height: auto;
+    width: 50%;
+}
+
+.textarea{
+    background-color: #E8E8E8;
+    border-color: #E8E8E8;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    color: darkblue;
+    text-align: center;
+    resize: none;
+}
+
+.text--output{
+    display: flex;
+    border-radius: 32px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 80%;
+    gap: 3.4rem;
+    padding-bottom: 7.5%;
+}
+.muñeco{
+    margin-top: 4rem;
+    width: 336px;
+    height: 304px;
+}
+
+.container--text{
+    font-family: "Inter", sans-serif;
+    color: grey;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+}
+.copiar{
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
+    font-family: "Inter", sans-serif;
+    padding: 14px 40px;
+    border-radius: 13px;
+    width: 20rem;
+}
+
+.container--button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 10%;
+}
+.container--buttons{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-content: center;
+    align-items: center;
+}
+.button--encriptar{
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
+    font-family: "Inter", sans-serif;
+    padding: 14px 40px;
+    border-radius: 13px;
+    width: 20rem;
+}
+.button--encriptar:hover{
+    background-color: rgba(0, 0, 139, 0.562);
+    border-color: rgba(0, 0, 139, 0.562);
+}
+.button--desencriptar{
+    color: darkblue;
+    border-color: darkblue;
+    background-color: #D8DFE8;
+    font-family: "Inter", sans-serif;
+    padding: 14px 40px;
+    border-radius: 13px;
+    width: 20rem;
+}
+.container-exclamation{
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+    align-items: start;
+    align-content: flex-start;
+}
 
