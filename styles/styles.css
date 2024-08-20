@@ -81,6 +81,10 @@ body{
 button:hover{
     background-color: rgba(0, 0, 139, 0.425);
 }
+
+
+/* Estilos de la seccion mostrar mensaje encriptado o desencriptado*/
+
 .text--output{
     margin-right: 40px;
     background-color: white;
@@ -102,6 +106,7 @@ button:hover{
     font-size: 2rem;
     text-align: center;
 }
+
 .p--textOutput{
     font-family: 'Inter' ,sans-serif;
     color: rgba(128, 128, 128, 0.938);
@@ -120,12 +125,14 @@ button:hover{
     margin: auto;
 
 }
+
 .mostrartexto{
     font-size: 1.5rem;
     font-family: 'Inter' ,sans-serif;;
     color: grey;
     margin-top: 15px;
 }
+
 .copiar{
     margin-bottom: 15px;
     width: 300px;
@@ -145,12 +152,13 @@ button:hover{
 }
 
 
+/* Estilos del Footer */
+
 
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-  
     left: 0;
     bottom: 0;
     width: 100%;
@@ -183,6 +191,7 @@ button:hover{
         gap: 10rem;
 
     }
+    /*Input texto*/
     .text--input {
         height: auto;
         width: 100%;
@@ -217,24 +226,42 @@ button:hover{
         padding: 16px 20px;
         font-size: 14px;
       }
-
-    .muñeco{
-        display: none;
-    }
-
-    .text--output{
-        width: auto;
-        max-width: 600px;
-        margin: 0;
-    }
-    .indicaciones{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        width: inherit;
-        height: inherit;
-    }
-
+      /*Output texto*/
+      .text--output {
+        margin-right: 0;
+        max-height: none;
+        height: auto;
+        border-radius: 0;
+        padding: 1rem;
+      }
+    
+      .indicaciones {
+        margin-top: 50px;
+      }
+    
+      .mensaje {
+        font-size: 1.5rem;
+      }
+    
+      .p--textOutput {
+        font-size: 0.875rem;
+      }
+    
+      .texto {
+        padding: 1rem 0;
+      }
+    
+      .mostrartexto {
+        font-size: 1.125rem;
+        margin-top: 10px;
+      }
+    
+      .copiar {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
 
  }
 
