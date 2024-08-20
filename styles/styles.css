@@ -45,10 +45,10 @@ body{
     font-size: 32px;
     margin-left: 100px;
     width: 577px;
+    
     font-family: 'Inter';
     color:darkblue;
     resize: none;
-    height: 100vh;
 }
 .indicaciones--botones{ 
     display: flex;
@@ -218,8 +218,9 @@ button:hover{
         width: 80vw;
         max-width: 600px;
         margin: 0;
-        text-align: center;
-    }
+        text-align: center; 
+        height: 500px ;
+    }   
  }
 
  /* Dispositivos Chicos (portrait tablets and large phones, 600px and up) */
@@ -239,6 +240,7 @@ button:hover{
         height: inherit;
         min-width: 600px;
         margin: 0;
+        height: 50vh;
     }
     .muñeco{
         display: none;
