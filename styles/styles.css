@@ -172,56 +172,61 @@ button:hover{
 
  /* Dispositivos Extra chicos (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
-    .main{
+    .main {
+        height: auto; 
+        min-height: 100vh; 
         display: flex;
         flex-direction: column; 
-        width: 100%; 
-        max-width: 600px;
-        justify-content: space-evenly;
-
+        justify-content: center; 
+        align-items: center;
+        padding: 10px;  
     }
-    .logo{
+    .logo {
         position: absolute;
-        top:0;
-        left:0;
+        top: 10px; 
+        left: 10px; 
     }
-    .muñeco{
+    .muñeco {
         display: none;
     }
-    .text--input{
+    .text--input {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+        width: 100%; 
     }
-    .contiene--mayusculas{
-        margin-top: 50px;
+    .contiene--mayusculas {
+        margin-top: 20px; 
     }
-    .text--output{
-        width: auto;
+    .text--output {
+        width: 100%;
         max-width: 600px;
         margin: 0;
     }
-    .indicaciones{
+    .indicaciones {
         margin: 0;
         display: flex;
         flex-direction: column;
-        width: inherit;
-        height: inherit;
+        width: 100%; 
+        height: auto; 
     }
-    .botones{
+    .botones {
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
-    .textarea{
+    .textarea {
         width: 90vw;
         max-width: 600px;
-        margin: 20px auto;
+        margin: 10px auto; 
         text-align: center; 
-        height: 500px ;
+        height: 300px; 
+        padding: 10px; 
+        box-sizing: border-box; 
     }   
- }
+}
+
 
  /* Dispositivos Chicos (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
