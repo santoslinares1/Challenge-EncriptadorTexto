@@ -207,16 +207,11 @@ button:hover{
       }
     
       .botones {
-        flex-direction: row;
+        flex-direction: column;
         gap: 1rem;
       }
     
-      .encriptar,
-      .desencriptar {
-        width: 100%;
-        padding: 12px 12px;
-        font-size: 24px;
-      }
+
       /*Output texto*/
       .text--output {
         margin-right: 0;
