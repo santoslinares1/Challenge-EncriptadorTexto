@@ -204,7 +204,7 @@ button:hover{
       .textarea {
         font-size: 24px;
         margin-left: 0;
-        width: 100%;
+        width: 80%;
         height: 200px;
       }
     
@@ -213,15 +213,15 @@ button:hover{
       }
     
       .botones {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
       }
     
       .encriptar,
       .desencriptar {
         width: 100%;
-        padding: 16px 20px;
-        font-size: 14px;
+        padding: 12px 12px;
+        font-size: 24px;
       }
       /*Output texto*/
       .text--output {
