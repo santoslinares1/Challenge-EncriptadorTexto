@@ -7,17 +7,16 @@ const indicaciones = document.getElementById('indicaciones');
 const texto = document.getElementById('text');
 const vocalesAcentos = /[áéíóúü]/; 
 const vocalesEncriptadas = ['ai', 'enter', 'imes', 'ober', 'ufat']; 
-const vocales = [ 'a', 'e', 'i', 'o', 'u'];
 let textoEncriptado = '';
 
 
-
+//boton para encriptar
 function btnEncriptar(){
-    //Chequea que no haya mayusculas o acentos
+
     if (textoEncriptar.value.match(/[A-Z]/) || textoEncriptar.value.match(vocalesAcentos)){
         alert('El texto contiene mayusculas o acentos');
     }else{
-        //Chequea que haya texto
+   
         if (textoEncriptar.value == ""){
             alert('Ingrese el texto que desea encriptar o desencriptar')
         }else{
@@ -49,7 +48,7 @@ function btnEncriptar(){
 
 }
 
-
+//Boton par desencriptar
 function btnDesencriptar(){
     if(textoEncriptar.value.match(/[A-Z]/) || textoEncriptar.value.match(vocalesAcentos)){
         alert('El texto contiene mayusculas o acentos')
@@ -70,7 +69,7 @@ function btnDesencriptar(){
     }
 }    
 
-
+//Boton para copiar
 document.getElementById('copiar').addEventListener('click', function() {
     txtCopy = mostrarTexto.innerText;
 
@@ -82,4 +81,4 @@ document.getElementById('copiar').addEventListener('click', function() {
             console.error('Error al copiar: ', err);
         });
 });
-console.log(textoEncriptado.innerHTML)
+
