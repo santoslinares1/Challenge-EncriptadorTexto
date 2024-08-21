@@ -263,6 +263,23 @@ button:hover{
         margin-bottom: 10px;
       }
 
+      /* footer  */
+      .footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+      }
+    
+      .linkedin,
+      .github {
+        margin-top: 0.5rem;
+      }
+    
+      .github img {
+        width: 36px;
+        height: 40px;
+      }
+
  }
 
  /* Dispositivos Chicos (portrait tablets and large phones, 600px and up) */
