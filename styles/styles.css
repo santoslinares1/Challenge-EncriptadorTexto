@@ -14,9 +14,10 @@ body{
     display: flex;
     justify-content: space-between;
     height: 100vh;
+    width:  100%;
 }
 
-/* Seccion del Text area  */
+/* Seccion del Textarea  */
 
 .text--input{
     display: flex;
@@ -36,8 +37,8 @@ body{
     border: 0;
     font-size: 32px;
     margin-left: 100px;
-    width: 577px;
-    
+    width: 500px;
+    text-align: center;
     font-family: 'Inter';
     color:darkblue;
     resize: none;
@@ -89,8 +90,9 @@ button:hover{
     margin-right: 40px;
     background-color: white;
     max-height: 944px;
-    height: 50vw;
+    height: 45vw;
     border-radius: 32px;
+    overflow: auto;
     
 }
 .indicaciones{
@@ -131,6 +133,9 @@ button:hover{
     font-family: 'Inter' ,sans-serif;;
     color: grey;
     margin-top: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: 10px 10px;
 }
 
 .copiar{
@@ -159,23 +164,8 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 0;
-    bottom: 0;
+    margin-top: 30px;
     width: 100%;
-}
-.texto--ingresado{
-    background-color: #E8E8E8;
-    border: 0;
-    color: darkblue;
-    font-size: 32px;
-    font-family: 'inter';
-    margin-left: 100px;
-
-}
-.indicaciones--botones{ 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
 }
 
  /* los breakpoints fueron obtendios de https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp*/

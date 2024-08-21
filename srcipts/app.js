@@ -59,8 +59,43 @@ function btnDesencriptar(){
             texto.removeAttribute('hidden')
             indicaciones.style.display = 'none'
             texto.style.display = 'flex';
+            let desencriptado = textoEncriptar.value;
+            for (let i = 0; i < vocalesEncriptadas.length; i++) {
+                const secuencia = vocalesEncriptadas[i];
+                console.log(secuencia)
+                desencriptado = desencriptado.replaceAll(secuencia, secuencia.charAt(0));
+            }   
+            mostrarTexto.innerHTML = desencriptado;
+        }
+    }
+}    
+
+
+document.getElementById('copiar').addEventListener('click', function() {
+    txtCopy = mostrarTexto.innerText;
+
+    navigator.clipboard.writeText(txtCopy)
+        .then(() => {
+            alert('Texto copiado al portapapeles');
+        })
+        .catch(err => {
+            console.error('Error al copiar: ', err);
+        });
+});
+console.log(textoEncriptado.innerHTML)
+/*
+    if(textoEncriptar.value.match(/[A-Z]/) || textoEncriptar.value.match(vocalesAcentos)){
+        alert('El texto contiene mayusculas o acentos')
+    }else{
+        if (textoEncriptar.value == ""){
+            alert('Ingrese el texto que desea encriptar o desencriptar')
+        }else{
+            texto.removeAttribute('hidden')
+            indicaciones.style.display = 'none'
+            texto.style.display = 'flex';
             let desencriptado = textoEncriptar.value.split(" ").map(Element => {
                 vocalesEncriptadas.forEach(E => {
+                    console.log(Element.match(E))
                     if (Element.match(E)){
                         if (E == 'ai'){
                             Element = Element.replace(E, 'a');
@@ -82,19 +117,4 @@ function btnDesencriptar(){
         }
     }
 
-    
-}
-desencriptar.addEventListener('click', btnDesencriptar)
-
-document.getElementById('copiar').addEventListener('click', function() {
-    txtCopy = mostrarTexto.innerText;
-
-    navigator.clipboard.writeText(txtCopy)
-        .then(() => {
-            alert('Texto copiado al portapapeles');
-        })
-        .catch(err => {
-            console.error('Error al copiar: ', err);
-        });
-});
-console.log(textoEncriptado.innerHTML)
+*/
