@@ -187,9 +187,6 @@ button:hover{
         flex-direction: column;
         width: 100%; 
         max-width: 600px;
-        justify-content: space-evenly;
-        gap: 10rem;
-
     }
     /*Input texto*/
     .text--input {
@@ -234,6 +231,10 @@ button:hover{
         border-radius: 0;
         padding: 1rem;
       }
+
+      .muñeco{
+        display: none;
+      }
     
       .indicaciones {
         margin-top: 50px;
@@ -265,7 +266,7 @@ button:hover{
 
       /* footer  */
       .footer {
-        flex-direction: column;
+        flex-direction: row;
         padding: 1rem;
         text-align: center;
       }
